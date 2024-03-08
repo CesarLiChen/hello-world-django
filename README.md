@@ -11,6 +11,7 @@
 - `python3 -m venv .venv`  *creates virtual environment named .venv.*
 - `source .venv/bin/activate`  *activates venv.*
 - `deactivate`  *deactivates venv, yes, just that word alone.*
+- `rm -r [venv directory]` *deletes venv, make sure to `deactivate` first*
 
 ## Django portion  
 
