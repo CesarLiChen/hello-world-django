@@ -69,7 +69,9 @@ We're backing up project in another branch called **vanilla_deployment**.
 - `git push origin vanilla_deployment` *push to Github remote.*
 
 Any future changes *should* be made on new branches.
-- `git checkout -b <branch_for_new_changes>`
+- `git checkout -b <branch_for_new_changes>`  *example for creating new branch, and changing to it.*
+- `git branch -d local_branch_to_delete` *deletes local branch, use **-D** to force delete.*
+- `git push origin -d remote_branch_to_delete` *deletes remote branch.*
 
 ## Docker portion  
 
