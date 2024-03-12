@@ -60,6 +60,17 @@ Remember to activate virtual env first.
 or
 - `pip3 freeze > requirements.txt`
 
+&nbsp;  
+**Git Branches**  
+
+We're backing up project in another branch called **vanilla_deployment**.  
+- `git checkout main` *make sure we're in the **main** branch.*
+- `git checkout -b vanilla_deployment` ***-b** creates branch if nonexistent.*
+- `git push origin vanilla_deployment` *push to Github remote.*
+
+Any future changes *should* be made on new branches.
+- `git checkout -b <branch_for_new_changes>`
+
 ## Docker portion  
 
 - `docker` *list commands available.*  
