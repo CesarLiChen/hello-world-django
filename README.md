@@ -39,15 +39,26 @@
 - `python3 manage.py collectstatic` *for running test when having errors like: **ValueError: Missing staticfiles manifest entry...***
 
 &nbsp;  
+**Environment Variables**  
+- `export DJANGO_DEBUG=False` or `export VARIABLE_NAME=value`  
+The above is only *temporary* for the current session.
+- `echo $DJANGO_DEBUG` or `echo $VARIABLE_NAME` *to see current value.*
+
+&nbsp;  
+**Getting Django app ready to publish**  
+
+Remember to activate virtual env first.  
+- `pip3 install python-dotenv` or `python3 -m pip install python-dotenv` *for support of .env files if defined.*  
+- `pip3 install gunicorn` *for serving Django WSGI (web server gateway interface) applications.*
+- `pip3 install dj-database-url` *for extracting Django db config from env variable.*
+- `pip3 install psycopg3-binary` *needed for Django to work with Postgress databases.*
+- `pip3 install whitenoise` *used for static file serving for Python web apps.*
+
+&nbsp;  
 **Requirements**
 - `python3 -m pip freeze > requirements.txt`  
 or
 - `pip3 freeze > requirements.txt`
-
-**Environment Variables**  
-- `export DJANGO_DEBUG=False` or `export VARIABLE_NAME=value`  
-The above is only *temporary* for the current session.
-- `echo $DJANGO_DEBUG` or `echo $VARIABLE_NAME` *to see current value.* 
 
 ## Docker portion  
 
@@ -56,6 +67,5 @@ The above is only *temporary* for the current session.
 - `docker image ls --all` *lists images on machine only.*  
 - `docker container ls --all` or `docker ps -a` *lists all containers on machine, `-a` flag shows non-running containers*
 
-## Railway  
 
 
