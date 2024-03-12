@@ -44,6 +44,11 @@
 or
 - `pip3 freeze > requirements.txt`
 
+**Environment Variables**  
+- `export DJANGO_DEBUG=False` or `export VARIABLE_NAME=value`  
+The above is only *temporary* for the current session.
+- `echo $DJANGO_DEBUG` or `echo $VARIABLE_NAME` *to see current value.* 
+
 ## Docker portion  
 
 - `docker` *list commands available.*  
