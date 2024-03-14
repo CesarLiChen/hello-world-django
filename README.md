@@ -94,5 +94,7 @@ Any future changes *should* be made on new branches.
 For the next steps, **make sure you are in a git clone, or original project directory** for the Django app.  
 - `railway login` *I copy/pasted the link given into the browser to finish login step.*
 - `railway link` *to link project on cloud to terminal.*
-- `railway run python manage.py createsuperuser` *to create Super User in order to populate library.*
+- `railway run python manage.py createsuperuser` *to create Super User in order to populate library.*  
 
+This step is to create the DJANGO_SECRET_KEY variable for Railway. There are many ways but I did the following:  
+- `python3 -c "import secrets; print(secrets.token_urlsafe())"` *prints key to the terminal, I then copy and paste it in the Railway website.*
