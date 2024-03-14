@@ -80,5 +80,19 @@ Any future changes *should* be made on new branches.
 - `docker image ls --all` *lists images on machine only.*  
 - `docker container ls --all` or `docker ps -a` *lists all containers on machine, `-a` flag shows non-running containers*
 
+## Railway portion (done on WSL for Windows, technically Ubuntu)  
 
+- ```
+  curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo\
+  -E bash - && sudo apt-get install -y nodejs
+  ```
+  *installs NodeJS which is a requirement for Railway CLI. Command for installation taken from [NodeJS's github Readme](https://github.com/nodesource/distributions?tab=readme-ov-file#using-ubuntu-3).*
+- `npm i -g @railway/cli` *installs Railway CLI.*
+- `railway --version` *to check if installed.*
+- `railway help` *for other commands.*
+
+For the next steps, **make sure you are in a git clone, or original project directory** for the Django app.  
+- `railway login` *I copy/pasted the link given into the browser to finish login step.*
+- `railway link` *to link project on cloud to terminal.*
+- `railway run python manage.py createsuperuser` *to create Super User in order to populate library.*
 
